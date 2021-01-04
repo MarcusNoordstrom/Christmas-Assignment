@@ -3,14 +3,14 @@ using UnityEditor;
 using UnityEngine;
 
 public class Palette : MonoBehaviour {
-    Tile _tile;
+    Tile _tile => GetComponent<Tile>();
     public static List<GameObject> TilePalette;
     
-    private void Awake()
+     void Awake()
     {
         TilePalette = new List<GameObject>();
-        _tile = (Tile)AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Tile/BaseTile.prefab", typeof(Tile));
-        TilePalette.Add(_tile.CreateTile(Color.green, "Grass"));
+        AddToPalette(Color.green, "Grass");
+        AddToPalette(Color.blue, "Water");
     }
 
     public void AddToPalette(Color color, string tileName)

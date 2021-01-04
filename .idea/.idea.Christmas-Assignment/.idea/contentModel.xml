@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Bulten\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Bulten\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Christmas-Assignment.-1809342109.00" t="ExcludeRecursive" />
+    <e p="D:\Forsbergs Projects\Christmas-Assignment" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="HoverTileText.cs" t="Include" />
+          <e p="LevelEditor.cs" t="Include" />
+          <e p="Map.cs" t="Include" />
+          <e p="Palette.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
+          <e p="UI.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Christmas-Assignment.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

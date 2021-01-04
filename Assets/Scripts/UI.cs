@@ -3,41 +3,45 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UI : MonoBehaviour {
-    public GameObject tileWindow;
+    public GameObject tileEditWindow;
     public GameObject editTileBTN;
     public GameObject addTileMenu;
-    private Palette _palette => FindObjectOfType<Palette>();
-
-    private void RefreshWindow(bool removeOnly)
+    public GameObject addTileBtn;
+     Palette _palette => FindObjectOfType<Palette>();
+    
+     void RefreshWindow(bool removeOnly)
     {
-        
-        for (var i = 0; i < tileWindow.transform.childCount; i++) {
-            Destroy(tileWindow.transform.GetChild(i).gameObject);
+        for (var i = 0; i < tileEditWindow.transform.childCount; i++) {
+            Destroy(tileEditWindow.transform.GetChild(i).gameObject);
         }
         if (removeOnly) return;
+        
         foreach (var tile in Palette.TilePalette) {
-            var tileUI = Instantiate(new GameObject(), tileWindow.transform);
+            GameObject tileUI = new GameObject();
+            Destroy(tileUI);
             tileUI.AddComponent<RectTransform>();
             tileUI.AddComponent<RawImage>().color = tile.GetComponent<SpriteRenderer>().color;
             tileUI.AddComponent<HoverTileText>();
             tileUI.name = tile.name;
+            Instantiate(tileUI, tileEditWindow.transform);
         }
+        Instantiate(addTileBtn, tileEditWindow.transform);
     }
     
     public void OpenTileWindow()
     {
-        if (!tileWindow.activeInHierarchy) {
-            tileWindow.SetActive(true);
+        if (!tileEditWindow.activeInHierarchy) {
+            tileEditWindow.SetActive(true);
             editTileBTN.transform.GetChild(0).GetComponent<Text>().text = "Close Tile Edit";
             RefreshWindow(false);
         }
         else {
             RefreshWindow(true);
-            tileWindow.SetActive(false);
+            tileEditWindow.SetActive(false);
             editTileBTN.transform.GetChild(0).GetComponent<Text>().text = "Edit Tiles";
         }
     }
-
+    
     public void OpenAddTileToWindow()
     {
         if (!addTileMenu.activeInHierarchy) {
@@ -47,7 +51,7 @@ public class UI : MonoBehaviour {
             addTileMenu.SetActive(false);
         }
     }
-
+    
     public void AddTileFinished()
     {
         var name = addTileMenu.transform.GetChild(0).GetComponent<Text>().text;

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Map))]
 public class LevelEditor : MonoBehaviour {
@@ -6,6 +7,10 @@ public class LevelEditor : MonoBehaviour {
 
     private void Awake()
     {
+        
+    }
+
+    void Start() {
         Map.GenerateEmptyMap();
     }
 }
