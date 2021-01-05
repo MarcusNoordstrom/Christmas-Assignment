@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/ee/ff57fc32/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.15f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -18,10 +19,12 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HoverTileText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Palette.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
+        <option value="$PROJECT_DIR$/Assets/HSVPicker/UI/ColorPickerSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/HSVPicker/UI/ColorPicker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
       </list>
     </option>
   </component>
@@ -52,10 +55,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18132">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18132" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -71,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609761913807</updated>
       <workItem from="1609761918299" duration="5713000" />
+      <workItem from="1609838785268" duration="8037000" />
     </task>
     <servers />
   </component>

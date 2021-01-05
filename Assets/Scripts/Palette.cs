@@ -8,7 +8,7 @@ public class Palette : MonoBehaviour {
     
      void Awake()
     {
-        TilePalette = new List<GameObject>();
+        TilePalette = new List<GameObject>(); 
         AddToPalette(Color.green, "Grass");
         AddToPalette(Color.blue, "Water");
     }

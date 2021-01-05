@@ -1,18 +1,24 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using HSVPicker;
 
 public class UI : MonoBehaviour {
     public GameObject tileEditWindow;
     public GameObject editTileBTN;
-    public GameObject addTileMenu;
-    public GameObject addTileBtn;
-     Palette _palette => FindObjectOfType<Palette>();
+    public GameObject tileAddMenu;
     
+    public ColorPicker picker;
+    public InputField tileNameInput;
+    Palette _palette => FindObjectOfType<Palette>();
+
      void RefreshWindow(bool removeOnly)
     {
         for (var i = 0; i < tileEditWindow.transform.childCount; i++) {
-            Destroy(tileEditWindow.transform.GetChild(i).gameObject);
+            if (tileEditWindow.transform.GetChild(i).gameObject.name != "OpenAddTileBTN") {
+                Destroy(tileEditWindow.transform.GetChild(i).gameObject);
+            }
         }
         if (removeOnly) return;
         
@@ -25,7 +31,12 @@ public class UI : MonoBehaviour {
             tileUI.name = tile.name;
             Instantiate(tileUI, tileEditWindow.transform);
         }
-        Instantiate(addTileBtn, tileEditWindow.transform);
+
+        for (var i = 0; i < tileEditWindow.transform.childCount; i++) {
+            if (tileEditWindow.transform.GetChild(i).gameObject.name == "OpenAddTileBTN") {
+                tileEditWindow.transform.GetChild(i).gameObject.transform.SetAsLastSibling();
+            }
+        }
     }
     
     public void OpenTileWindow()
@@ -42,21 +53,14 @@ public class UI : MonoBehaviour {
         }
     }
     
-    public void OpenAddTileToWindow()
-    {
-        if (!addTileMenu.activeInHierarchy) {
-            addTileMenu.SetActive(true);
-        }
-        else {
-            addTileMenu.SetActive(false);
-        }
+    public void OpenAddTileToWindow() {
+        tileAddMenu.SetActive(true);
     }
     
     public void AddTileFinished()
     {
-        var name = addTileMenu.transform.GetChild(0).GetComponent<Text>().text;
-        var colorValues = addTileMenu.transform.GetChild(1).GetComponent<Color>();
-        var color = new Color(colorValues.r, colorValues.g, colorValues.b);
-        _palette.AddToPalette(color, name);
+        tileAddMenu.SetActive(false);
+        _palette.AddToPalette(picker.CurrentColor, tileNameInput.text);
+        RefreshWindow(false);
     }
 }
