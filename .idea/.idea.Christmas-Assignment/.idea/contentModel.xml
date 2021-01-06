@@ -42,7 +42,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="HoverTileText.cs" t="Include" />
+          <e p="HoverOver.cs" t="Include" />
           <e p="LevelEditor.cs" t="Include" />
           <e p="Map.cs" t="Include" />
           <e p="Palette.cs" t="Include" />

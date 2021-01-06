@@ -3,6 +3,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using HSVPicker;
+using TMPro;
+using UnityEngine.UIElements;
 
 public class UI : MonoBehaviour {
     public GameObject tileEditWindow;
@@ -25,10 +27,29 @@ public class UI : MonoBehaviour {
         foreach (var tile in Palette.TilePalette) {
             GameObject tileUI = new GameObject();
             Destroy(tileUI);
-            tileUI.AddComponent<RectTransform>();
             tileUI.AddComponent<RawImage>().color = tile.GetComponent<SpriteRenderer>().color;
-            tileUI.AddComponent<HoverTileText>();
             tileUI.name = tile.name;
+            tileUI.AddComponent<HoverOver>();
+            tileUI.tag = "Tile";
+            
+            
+            GameObject tileUIText = new GameObject();
+            Destroy(tileUIText);
+            
+            tileUIText.AddComponent<TextMeshProUGUI>().text = tileUI.name;
+            
+            if (tileUI.GetComponent<RawImage>().color == Color.black) {
+                tileUIText.GetComponent<TextMeshProUGUI>().color = Color.white;
+            }
+            else {
+                tileUIText.GetComponent<TextMeshProUGUI>().color = Color.black;
+            }
+            
+            tileUIText.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
+            tileUIText.GetComponent<TextMeshProUGUI>().fontSize = 12;
+            tileUIText.GetComponent<TextMeshProUGUI>().raycastTarget = false;
+            
+            Instantiate(tileUIText, tileUI.transform);
             Instantiate(tileUI, tileEditWindow.transform);
         }
 
@@ -55,6 +76,10 @@ public class UI : MonoBehaviour {
     
     public void OpenAddTileToWindow() {
         tileAddMenu.SetActive(true);
+    }
+
+    public void CloseAddTileWindow() {
+        tileAddMenu.SetActive(false);
     }
     
     public void AddTileFinished()

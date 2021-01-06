@@ -7,15 +7,19 @@ using UnityEngine;
 public class Palette : MonoBehaviour {
     Tile _tile => GetComponent<Tile>();
     public static List<GameObject> TilePalette;
-    public GameObject[] tiles;
-    
-     void Awake()
+
+    void Awake()
     {
         TilePalette = new List<GameObject>();
-        tiles = Resources.LoadAll("Tiles").Cast<GameObject>().ToArray();
+        var tiles = Resources.LoadAll("Tiles").Cast<GameObject>().ToArray();
+
+        if (tiles.Length <= 0) {
+            AddToPalette(Color.green, "Grass");
+            AddToPalette(Color.blue, "Water");
+        }
 
         foreach (var tile in tiles) {
-            AddToPalette(Color.black, "TEST");
+            AddToPalette(tile.GetComponent<SpriteRenderer>().color, tile.name);
         }
     }
 

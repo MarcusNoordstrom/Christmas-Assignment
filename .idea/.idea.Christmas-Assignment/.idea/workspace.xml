@@ -18,13 +18,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HoverTileText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/HSVPicker/UI/ColorPickerSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/HSVPicker/UI/ColorPicker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Palette.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HoverTileText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HoverOver.cs" />
       </list>
     </option>
   </component>
@@ -75,6 +76,8 @@
       <updated>1609761913807</updated>
       <workItem from="1609761918299" duration="5713000" />
       <workItem from="1609838785268" duration="9755000" />
+      <workItem from="1609864287176" duration="4516000" />
+      <workItem from="1609916677844" duration="6879000" />
     </task>
     <servers />
   </component>
@@ -165,5 +168,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1609767023485" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1609864888387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1609864888387" />
   </component>
 </project>

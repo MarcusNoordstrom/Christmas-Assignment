@@ -6,6 +6,8 @@ TagManager:
   tags:
   - AddTileBTN
   - AddTileWindow
+  - Tile
+  - TileSlot
   layers:
   - Default
   - TransparentFX
