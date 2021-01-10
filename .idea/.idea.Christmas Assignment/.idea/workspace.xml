@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1b1a051-9629-48cc-b334-0727709432d7" name="Default Changelist" comment="" />
+    <list default="true" id="e1b1a051-9629-48cc-b334-0727709432d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Christmas Assignment/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Christmas Assignment/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Christmas Assignment/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Christmas Assignment/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Christmas Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Christmas Assignment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Grass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Marc.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Marc.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RED.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RED.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/WIT.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/WIT.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Water.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HoverOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HoverOver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Palette.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Palette.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/marcusnordstrom/Christmas Assignment/Assets/Scripts/Map.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/marcusnordstrom/Christmas Assignment/Assets/Scripts/LevelEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/marcusnordstrom/Christmas Assignment/Assets/Scripts/LevelEditor.cs" root0="SKIP_HIGHLIGHTING" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/TileData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HoverTileText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Palette.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HoverOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Palette.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1lv9KmjALVr6upsaSbjxeJlWSxl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,6 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608466647812</updated>
       <workItem from="1608466673560" duration="14971000" />
+      <workItem from="1610103756946" duration="265000" />
+      <workItem from="1610199983923" duration="11256000" />
     </task>
     <servers />
   </component>
@@ -78,6 +98,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="186" key="Rider.ProjectTemplateDialog.Size" timestamp="1610227687670">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="186" key="Rider.ProjectTemplateDialog.Size/0.0.1440.900@0.0.1440.900" timestamp="1610227687670" />
     <state x="510" y="167" key="RiderGenerateDialog" timestamp="1608628419186">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -87,10 +111,10 @@
     </state>
     <state x="0" y="28" width="1440" height="872" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1608485866292" />
     <state x="0" y="28" width="1440" height="872" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1440.875@0.25.1440.875" timestamp="1608485964056" />
-    <state x="384" y="209" key="run.anything.popup" timestamp="1608485602803">
+    <state x="384" y="189" key="run.anything.popup" timestamp="1610234935000">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="384" y="209" key="run.anything.popup/0.25.1440.875@0.25.1440.875" timestamp="1608485602803" />
+    <state x="384" y="189" key="run.anything.popup/0.25.1440.875@0.25.1440.875" timestamp="1610234935000" />
     <state x="383" y="214" width="672" height="660" key="search.everywhere.popup" timestamp="1608467290656">
       <screen x="0" y="25" width="1440" height="875" />
     </state>

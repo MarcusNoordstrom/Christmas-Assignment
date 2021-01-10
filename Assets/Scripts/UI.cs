@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,16 +10,19 @@ using UnityEngine.UIElements;
 public class UI : MonoBehaviour {
     public GameObject tileEditWindow;
     public GameObject editTileBTN;
+    public GameObject deleteBTN;
     public GameObject tileAddMenu;
+    public GameObject addBTN;
     
     public ColorPicker picker;
     public InputField tileNameInput;
     Palette _palette => FindObjectOfType<Palette>();
+    public static bool EditMode;
 
      void RefreshWindow(bool removeOnly)
     {
         for (var i = 0; i < tileEditWindow.transform.childCount; i++) {
-            if (tileEditWindow.transform.GetChild(i).gameObject.name != "OpenAddTileBTN") {
+            if (tileEditWindow.transform.GetChild(i).gameObject.name != "OpenAddTileBTN" && tileEditWindow.transform.GetChild(i).gameObject.name != "EditTileBTN") {
                 Destroy(tileEditWindow.transform.GetChild(i).gameObject);
             }
         }
@@ -53,11 +57,15 @@ public class UI : MonoBehaviour {
             Instantiate(tileUI, tileEditWindow.transform);
         }
 
-        for (var i = 0; i < tileEditWindow.transform.childCount; i++) {
-            if (tileEditWindow.transform.GetChild(i).gameObject.name == "OpenAddTileBTN") {
-                tileEditWindow.transform.GetChild(i).gameObject.transform.SetAsLastSibling();
-            }
-        }
+        // for (var i = 0; i < tileEditWindow.transform.childCount; i++) {
+        //     if (tileEditWindow.transform.GetChild(i).gameObject.name == "OpenAddTileBTN") {
+        //         tileEditWindow.transform.GetChild(i).gameObject.transform.SetAsLastSibling();
+        //     }
+        //
+        //     if (tileEditWindow.transform.GetChild(i).gameObject.name == "EditTileBTN") {
+        //         tileEditWindow.transform.GetChild(i).gameObject.transform.SetAsLastSibling();
+        //     }
+        // }
     }
     
     public void OpenTileWindow()
@@ -75,7 +83,37 @@ public class UI : MonoBehaviour {
     }
     
     public void OpenAddTileToWindow() {
-        tileAddMenu.SetActive(true);
+        tileAddMenu.SetActive(true); 
+        deleteBTN.SetActive(false);
+        if (!EditMode) return;
+        addBTN.GetComponent<TextMeshProUGUI>().text = "Change";
+        deleteBTN.SetActive(true);
+    }
+
+    public void DeleteTile()
+    {
+        var tileToRemove = HoverOver.SelectedTile.name.Remove(HoverOver.SelectedTile.name.Length - 7, 7);
+        _palette.RemoveFromPalette(tileToRemove);
+        EditModeSwitch();
+        CloseAddTileWindow();
+        RefreshWindow(false);
+        AssetDatabase.Refresh();
+    }
+
+    //TODO: MOVE LOGIC FROM HERE TO PALETTE.CS
+    public void ChangeTile()
+    {
+        var tileToChange = HoverOver.SelectedTile;
+
+        tileToChange.GetComponent<RawImage>().color = picker.CurrentColor;
+        tileToChange.name = tileNameInput.text;
+        _palette.ChangeTileInPalette(tileToChange, picker.CurrentColor, tileNameInput.text);
+        CloseAddTileWindow();
+    }
+
+    public void EditModeSwitch()
+    {
+        EditMode = !EditMode;
     }
 
     public void CloseAddTileWindow() {
@@ -84,8 +122,13 @@ public class UI : MonoBehaviour {
     
     public void AddTileFinished()
     {
-        tileAddMenu.SetActive(false);
-        _palette.AddToPalette(picker.CurrentColor, tileNameInput.text);
-        RefreshWindow(false);
+        if (EditMode) {
+            ChangeTile();
+        }
+        else {
+            tileAddMenu.SetActive(false);
+            _palette.AddToPalette(picker.CurrentColor, tileNameInput.text);
+            RefreshWindow(false);
+        }
     }
 }

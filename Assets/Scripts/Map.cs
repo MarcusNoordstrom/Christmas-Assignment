@@ -1,3 +1,4 @@
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -22,11 +23,28 @@ public class Map : MonoBehaviour {
         }
         GenerateEmptyMap();
     }
-    
-    public void GenerateEmptyMap() {
-        Debug.Log(Palette.TilePalette[0].gameObject.name);
-        Debug.Log(Palette.TilePalette[1].gameObject.name);
+
+    public void RefreshMap()
+    {
+        // for (int i = 0; i < _tileHolder.transform.childCount; i++) {
+        //     Destroy(_tileHolder.transform.GetChild(i).gameObject);
+        // }
+        //
+        // for (var x = 0; x < mapWidth; x++) {
+        //     
+        // }
+
         
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A)) {
+            Debug.Log(Palette.TilePalette[0].GetComponent<SpriteRenderer>().color);
+        }
+    }
+
+    public void GenerateEmptyMap() {
         _tileHolder = new GameObject("Tile Holder");
         for (var x = 0; x < mapWidth; x++) {
             for (var y = 0; y < mapHeight; y++) {

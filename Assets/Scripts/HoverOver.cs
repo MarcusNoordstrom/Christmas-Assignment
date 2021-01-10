@@ -2,10 +2,13 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class HoverOver : MonoBehaviour, IPointerUpHandler ,IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler {
 
     GameObject tileToPutInHotbar;
+    private GameObject tileAddWindow;
+    public static GameObject SelectedTile;
 
     Vector3 _oldPosition;
 
@@ -21,14 +24,22 @@ public class HoverOver : MonoBehaviour, IPointerUpHandler ,IPointerDownHandler, 
         _canvas = FindObjectOfType<Canvas>().GetComponent<Canvas>();
         _canvasGroup = GetComponent<CanvasGroup>();
         _rectTransform = GetComponent<RectTransform>();
+
+        SelectedTile = null;
     }
 
     // public void OnPointerEnter(PointerEventData eventData) {
     //     Debug.Log($"Currently hovering: {this.GetComponentInParent<Transform>().name}");
     // }
     
-    public void OnPointerDown(PointerEventData eventData) {
-        
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (!UI.EditMode) return;
+        var editWindow = FindObjectOfType<UI>();
+        editWindow.OpenAddTileToWindow();
+        editWindow.picker.CurrentColor = this.GetComponent<RawImage>().color;
+        editWindow.tileNameInput.text = this.name.Remove(this.name.Length - 7, 7);
+        SelectedTile = this.gameObject;
     }
 
     public void OnDrag(PointerEventData eventData) {
