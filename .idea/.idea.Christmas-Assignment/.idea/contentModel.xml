@@ -42,10 +42,17 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Hotkeys.cs" t="Include" />
           <e p="HoverOver.cs" t="Include" />
           <e p="LevelEditor.cs" t="Include" />
           <e p="Map.cs" t="Include" />
+          <e p="MapData.cs" t="Include" />
+          <e p="MapDataList.cs" t="Include" />
+          <e p="Movement.cs" t="Include" />
+          <e p="Paint.cs" t="Include" />
           <e p="Palette.cs" t="Include" />
+          <e p="SaveSystem.cs" t="Include" />
+          <e p="Slot.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="UI.cs" t="Include" />
         </e>

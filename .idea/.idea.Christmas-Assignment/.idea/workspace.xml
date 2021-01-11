@@ -11,21 +11,42 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/ee/ff57fc32/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.15f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Slot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Paint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Forsbergs Projects/Christmas-Assignment/Assets/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/HSVPicker/UI/ColorPickerSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/HSVPicker/UI/ColorPicker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HoverTileText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Hotkeys.cs" />
+        <option value="$PROJECT_DIR$/Assets/Paint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Maps/Test.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MapData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hotkeys.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HoverOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MapDataList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Paint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Palette.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HoverTileText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HoverOver.cs" />
       </list>
     </option>
   </component>
@@ -100,6 +121,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="718" y="380" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1610326249257">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="380" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1610326249257" />
     <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1609770981317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -168,6 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1609767023485" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610319089374">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1610319089374" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1609864888387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
